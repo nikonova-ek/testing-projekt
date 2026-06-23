@@ -24,4 +24,12 @@ public class Warenkorb {
                 .filter(p -> p.name().equals(name))
                 .count();
     }
+    public void removeItem(String name) {
+        for (int i = 0; i < positionen.size(); i++) {
+            if (positionen.get(i).name().equals(name)) {
+                positionen.remove(i);
+                return;
+            }
+        }
+    }
 }
