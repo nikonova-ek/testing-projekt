@@ -19,4 +19,13 @@ public class Warenkorb {
     public void addItem(String name, double preis) {
         positionen.add(new Position(name, preis));
     }
+    public int getQuantity(String name) {
+        int anzahl = 0;
+        for (Position p : positionen) {
+            if (p.name().equals(name)) {
+                anzahl++;
+            }
+        }
+        return anzahl;
+    }
 }
