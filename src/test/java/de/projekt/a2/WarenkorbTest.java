@@ -13,4 +13,10 @@ class WarenkorbTest {
         Warenkorb cart = new Warenkorb();
         assertEquals(0.0, cart.getTotal(), DELTA);
     }
+    @Test
+    void test_add_item_increases_total() {
+        Warenkorb cart = new Warenkorb();
+        cart.addItem("Apfel", 1.0);
+        assertEquals(1.0, cart.getTotal(), DELTA);
+    }
 }
