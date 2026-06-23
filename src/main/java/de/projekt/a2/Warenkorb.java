@@ -12,13 +12,10 @@ public class Warenkorb {
     private final List<Position> positionen = new ArrayList<>();
 
     public double getTotal() {
-        double summe = 0.0;
-        for (Position p : positionen) {
-            summe += p.preis();
-        }
-        return summe;
+        return positionen.stream()
+                .mapToDouble(Position::preis)
+                .sum();
     }
-
     public void addItem(String name, double preis) {
         positionen.add(new Position(name, preis));
     }
