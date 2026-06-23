@@ -20,12 +20,8 @@ public class Warenkorb {
         positionen.add(new Position(name, preis));
     }
     public int getQuantity(String name) {
-        int anzahl = 0;
-        for (Position p : positionen) {
-            if (p.name().equals(name)) {
-                anzahl++;
-            }
-        }
-        return anzahl;
+        return (int) positionen.stream()
+                .filter(p -> p.name().equals(name))
+                .count();
     }
 }
