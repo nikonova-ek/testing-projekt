@@ -1,21 +1,25 @@
 package de.projekt.a2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Warenkorb (TDD). Aktuell noch naiv: es wird nur der zuletzt hinzugefügte Preis
- * gemerkt. Das reicht für einen Artikel; mehrere Artikel folgen im nächsten Zyklus.
+ * Warenkorb (TDD). Speichert die Artikel als Liste von Positionen
+ * und summiert beim getTotal() über alle Preise.
  */
 public class Warenkorb {
 
-    /** Vorläufig: nur der zuletzt hinzugefügte Preis. */
-    private double letzterPreis = 0.0;
+    private final List<Position> positionen = new ArrayList<>();
 
-    /** Liefert die aktuelle Gesamtsumme des Warenkorbs. */
     public double getTotal() {
-        return letzterPreis;
+        double summe = 0.0;
+        for (Position p : positionen) {
+            summe += p.preis();
+        }
+        return summe;
     }
 
-    /** Fügt einen Artikel hinzu (noch ohne Liste/Mengen). */
     public void addItem(String name, double preis) {
-        this.letzterPreis = preis;
+        positionen.add(new Position(name, preis));
     }
 }
