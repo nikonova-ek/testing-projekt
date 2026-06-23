@@ -19,4 +19,11 @@ class WarenkorbTest {
         cart.addItem("Apfel", 1.0);
         assertEquals(1.0, cart.getTotal(), DELTA);
     }
+    @Test
+    void test_add_multiple_items_sums_total() {
+        Warenkorb cart = new Warenkorb();
+        cart.addItem("Apfel", 1.0);
+        cart.addItem("Banane", 2.0);
+        assertEquals(3.0, cart.getTotal(), DELTA);
+    }
 }
