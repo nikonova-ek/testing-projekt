@@ -34,4 +34,14 @@ class WarenkorbTest {
         cart.addItem("Banane", 2.0);
         assertEquals(2, cart.getQuantity("Apfel"));
     }
+    @Test
+    void test_remove_item() {
+        Warenkorb cart = new Warenkorb();
+        cart.addItem("Apfel", 1.0);
+        cart.addItem("Apfel", 1.0);
+        cart.addItem("Banane", 2.0);
+        cart.removeItem("Apfel");
+        assertEquals(1, cart.getQuantity("Apfel"));
+        assertEquals(3.0, cart.getTotal(), DELTA);
+    }
 }
