@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Passwortpruefer.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package de.projekt.a1;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class Passwortpruefer {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final int MIN_LAENGE = 8;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final int MAX_LAENGE = 20;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean istLangGenug(String passwort) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_9'>1</a>
+<span>
+1. istLangGenug : removed call to de/projekt/a1/Passwortpruefer::pruefeNichtNull &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        pruefeNichtNull(passwort);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_10'/>
+10
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_10'>3</a>
+<span>
+1. istLangGenug : replaced boolean return with true for de/projekt/a1/Passwortpruefer::istLangGenug &rarr; KILLED<br/>
+2. istLangGenug : changed conditional boundary &rarr; KILLED<br/>
+3. istLangGenug : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return passwort.length() &#62;= MIN_LAENGE;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean istNichtZuLang(String passwort) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_14'/>
+14
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_14'>1</a>
+<span>
+1. istNichtZuLang : removed call to de/projekt/a1/Passwortpruefer::pruefeNichtNull &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        pruefeNichtNull(passwort);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_15'/>
+15
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_15'>3</a>
+<span>
+1. istNichtZuLang : changed conditional boundary &rarr; KILLED<br/>
+2. istNichtZuLang : negated conditional &rarr; KILLED<br/>
+3. istNichtZuLang : replaced boolean return with true for de/projekt/a1/Passwortpruefer::istNichtZuLang &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return passwort.length() &#60;= MAX_LAENGE;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean hatZiffer(String passwort) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_19'/>
+19
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_19'>1</a>
+<span>
+1. hatZiffer : removed call to de/projekt/a1/Passwortpruefer::pruefeNichtNull &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        pruefeNichtNull(passwort);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (char c : passwort.toCharArray()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_21'/>
+21
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_21'>1</a>
+<span>
+1. hatZiffer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (Character.isDigit(c)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_22'>1</a>
+<span>
+1. hatZiffer : replaced boolean return with false for de/projekt/a1/Passwortpruefer::hatZiffer &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_25'/>
+25
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_25'>1</a>
+<span>
+1. hatZiffer : replaced boolean return with true for de/projekt/a1/Passwortpruefer::hatZiffer &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean istGueltig(String passwort) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_29'/>
+29
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_29'>4</a>
+<span>
+1. istGueltig : replaced boolean return with true for de/projekt/a1/Passwortpruefer::istGueltig &rarr; KILLED<br/>
+2. istGueltig : negated conditional &rarr; KILLED<br/>
+3. istGueltig : negated conditional &rarr; KILLED<br/>
+4. istGueltig : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return istLangGenug(passwort) &#38;&#38; istNichtZuLang(passwort) &#38;&#38; hatZiffer(passwort);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private void pruefeNichtNull(String passwort) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_33'>1</a>
+<span>
+1. pruefeNichtNull : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (passwort == null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Passwort darf nicht null sein.&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@95cecc5_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>istLangGenug<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:nullPasswortWirftException()]</span></span> removed call to de/projekt/a1/Passwortpruefer::pruefeNichtNull &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_10'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>istLangGenug<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:kurzesPasswortIstNichtLangGenug()]</span></span> replaced boolean return with true for de/projekt/a1/Passwortpruefer::istLangGenug &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>istLangGenug<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferGrenzwertTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferGrenzwertTest]/[method:genauMindestlaenge()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>istLangGenug<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:kurzesPasswortIstNichtLangGenug()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_14'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>istNichtZuLang<br/><b>Killed by : </b>none</span></span> removed call to de/projekt/a1/Passwortpruefer::pruefeNichtNull &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_15'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>istNichtZuLang<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferGrenzwertTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferGrenzwertTest]/[method:genauMaximallaenge()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>istNichtZuLang<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:sehrLangesPasswortIstZuLang()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>istNichtZuLang<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:sehrLangesPasswortIstZuLang()]</span></span> replaced boolean return with true for de/projekt/a1/Passwortpruefer::istNichtZuLang &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_19'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hatZiffer<br/><b>Killed by : </b>none</span></span> removed call to de/projekt/a1/Passwortpruefer::pruefeNichtNull &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_21'>21</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_21'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hatZiffer<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortOhneZifferWirdErkannt()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hatZiffer<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortMitZifferWirdErkannt()]</span></span> replaced boolean return with false for de/projekt/a1/Passwortpruefer::hatZiffer &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hatZiffer<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortOhneZifferWirdErkannt()]</span></span> replaced boolean return with true for de/projekt/a1/Passwortpruefer::hatZiffer &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>istGueltig<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortOhneZifferIstUngueltig()]</span></span> replaced boolean return with true for de/projekt/a1/Passwortpruefer::istGueltig &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>istGueltig<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:gueltigesPasswortErfuelltAlleRegeln()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>istGueltig<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:gueltigesPasswortErfuelltAlleRegeln()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>istGueltig<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:gueltigesPasswortErfuelltAlleRegeln()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@95cecc5_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@95cecc5_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>pruefeNichtNull<br/><b>Killed by : </b>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortOhneZifferWirdErkannt()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:kurzesPasswortIstNichtLangGenug()] (0 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:langesPasswortIstLangGenug()] (0 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:gueltigesPasswortErfuelltAlleRegeln()] (0 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortOhneZifferIstUngueltig()] (0 ms)</li><li>de.projekt.a1.PasswortprueferGrenzwertTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferGrenzwertTest]/[method:einsUnterMindestlaenge()] (0 ms)</li><li>de.projekt.a1.PasswortprueferGrenzwertTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferGrenzwertTest]/[method:genauMindestlaenge()] (0 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:nullPasswortWirftException()] (1 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:sehrLangesPasswortIstZuLang()] (0 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:normalesPasswortIstNichtZuLang()] (0 ms)</li><li>de.projekt.a1.PasswortprueferGrenzwertTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferGrenzwertTest]/[method:genauMaximallaenge()] (0 ms)</li><li>de.projekt.a1.PasswortprueferGrenzwertTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferGrenzwertTest]/[method:einsUeberMaximallaenge()] (11 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortOhneZifferWirdErkannt()] (0 ms)</li><li>de.projekt.a1.PasswortprueferTest.[engine:junit-jupiter]/[class:de.projekt.a1.PasswortprueferTest]/[method:passwortMitZifferWirdErkannt()] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.16.1
+
+</body>
+</html>
